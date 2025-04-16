@@ -1,0 +1,67 @@
+.carousel-inner > .carousel-item > img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;  
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.canvas-overlay {
+    opacity: 0.9;
+    padding: 35px;
+}
+
+.link {
+    color: black;
+    font-size: large;
+}    
+
+.link:hover {
+    color: gray; 
+    text-decoration: underline;
+}
+
+.menu {
+    font-size: xx-large;
+}
+
+.title {
+    background: linear-gradient(to bottom, #8B0000, #FF6347, #FFC0CB); /* Rosso scuro -> Rosso chiaro -> Rosa */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:  
+        0px 2px 3px rgba(0, 0, 0, 0.15),  
+        0px 4px 6px rgba(0, 0, 0, 0.1),  
+        0px 6px 9px rgba(0, 0, 0, 0.05);
+    position: relative;
+    top: 18px;
+    font-size: x-large;
+}
+  
+.title::after {
+    content: attr(data-text);
+    display: block;
+    opacity: 0;
+}
+
+.bl {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.bc {
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+
+.tr {
+    opacity: 0.9;
+}
