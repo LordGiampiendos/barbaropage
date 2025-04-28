@@ -31,7 +31,7 @@ function Login() {
         }),
         onSubmit: (values) => {
           setIsLoading(true);
-          axios.post('https://serverbarbaropersonal.pagekite.me/users/login', values, { headers: { 'WebRequest': true }, withCredentials: true})
+          axios.post('https://serverbarbaropersonal.pagekite.me/users/login', values, { headers: { 'WebRequest': 'aut' }, withCredentials: true})
             .then(response => {
               login(response.data);
               navigate('/');
