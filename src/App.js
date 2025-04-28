@@ -31,6 +31,9 @@ function App() {
 
     useEffect(() => {
         axios.post('https://serverbarbaropersonal.pagekite.me/session/get-session-data', user, {
+            headers: {
+                'WebRequest': true,
+            },
             withCredentials: true,
         })
             .then(response => {
