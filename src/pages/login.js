@@ -31,7 +31,7 @@ function Login() {
         }),
         onSubmit: (values) => {
           setIsLoading(true);
-          axios.post('https://serverbarbaropersonal.pagekite.me/users/login', values, {withCredentials: true})
+          axios.post('https://serverbarbaropersonal.pagekite.me/users/login', values, { headers: { 'WebRequest': true }, withCredentials: true})
             .then(response => {
               login(response.data);
               navigate('/');
@@ -118,6 +118,7 @@ function Login() {
                       onSuccess={(values) => 
                         axios.post('https://serverbarbaropersonal.pagekite.me/users/google-login',  JSON.stringify({ tokenId: values.credential }), {
                           headers: {
+                            'WebRequest': true,
                             'Content-Type': 'application/json',
                           },  
                           withCredentials: true
