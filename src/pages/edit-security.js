@@ -36,9 +36,11 @@ function SecurityPage() {
                 })
                 .catch(error => {
                     setIsMFA(false);
+                })
+                .finally(() => {
+                    setLoading(false);
                 });
         }
-        
     }, [user]);
 
     const generateQRCode = () => {
