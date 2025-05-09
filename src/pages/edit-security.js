@@ -38,7 +38,7 @@ function SecurityPage() {
                     setIsMFA(false);
                 });
         }
-        setLoading(false);
+        
     }, [user]);
 
     const generateQRCode = () => {
