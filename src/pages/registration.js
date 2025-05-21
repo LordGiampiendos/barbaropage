@@ -317,6 +317,7 @@ function Registration() {
                                 }
                                 required
                             />
+                            <br />
                         </Form.Group>
 
                         <Button variant="primary" type="submit" style={{ marginTop: '20px' }}>
