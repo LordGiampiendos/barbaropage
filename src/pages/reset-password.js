@@ -93,10 +93,7 @@ const ResetPassword = () => {
 
                                 <br />
                                 <br />
-                                <Button type="submit" variant="primary" disabled={isSubmitting}>
-                                    {isSubmitting ? 'Caricamento...' : 'Resetta la password'}
-                                </Button>
-                                <Button variant="primary" type="submit" style={{ marginTop: '20px' }}>
+                                <Button variant="primary" type="submit">
                                     {isLoading ? (
                                         <Spinner
                                             as="span"
