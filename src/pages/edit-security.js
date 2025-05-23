@@ -118,10 +118,34 @@ function SecurityPage() {
                 <h2>Sicurezza</h2>
                 <br />
                 <br />
-                <div className="d-flex justify-content-center align-items-center">
-                    <Spinner animation="border" variant="primary" size="lg" />
-                </div>
-                <br />
+                <Row>
+                    <Col md={4} className="text-center">
+                        <Card>
+                            <Card.Body>
+                                <Card.Title style={{ marginTop: '15px' }}>Password</Card.Title>
+                                <br />
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <Spinner animation="border" variant="primary" size="lg" />
+                                </div>
+                                <br />
+                                <br />
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={8} className="text-center">
+                        <Card>
+                            <Card.Body>
+                                <Card.Title style={{ marginTop: '15px' }}>Autenticazione multi-fattore</Card.Title>
+                                <br />
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <Spinner animation="border" variant="primary" size="lg" />
+                                </div>
+                                <br />
+                                <br />
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </Container>
         );
     };
