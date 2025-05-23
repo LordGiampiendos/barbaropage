@@ -33,7 +33,13 @@ function ProfilePage() {
     };
 
     if (!user) {
-        return <div>Caricamento...</div>;
+        return (
+            <Container className="mt-5 mb-5">
+                <div className="d-flex justify-content-center align-items-center">
+                    <Spinner animation="border" variant="primary" size="lg" />
+                </div>
+            </Container>
+        );
     }
     else {
         return (
