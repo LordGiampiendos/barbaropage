@@ -128,7 +128,6 @@ function SecurityPage() {
                                     <Spinner animation="border" variant="primary" size="lg" />
                                 </div>
                                 <br />
-                                <br />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -140,7 +139,6 @@ function SecurityPage() {
                                 <div className="d-flex justify-content-center align-items-center">
                                     <Spinner animation="border" variant="primary" size="lg" />
                                 </div>
-                                <br />
                                 <br />
                             </Card.Body>
                         </Card>
