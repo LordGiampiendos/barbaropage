@@ -9,7 +9,7 @@ const LogoutPage = () => {
 
   useEffect(() => {
     logout();
-    navigate('/');
+    navigate('/login');
   }, [logout, navigate]);
 
   return (
