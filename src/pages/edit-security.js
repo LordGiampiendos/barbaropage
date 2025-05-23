@@ -116,8 +116,6 @@ function SecurityPage() {
         return (
             <Container className="mt-5 mb-5">
                 <h2>Sicurezza</h2>
-                <br />
-                <br />
                 <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
                     <Spinner animation="border" variant="primary" size="lg" />
                 </div>
