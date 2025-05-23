@@ -45,7 +45,7 @@ function App() {
             .catch(error => {
                 logout();
                 if (location.pathname !== '/' && location.pathname !== '/login' && location.pathname !== '/registration' && location.pathname !== '/recovery-password' && location.pathname !== '/reset-password' && location.pathname !== '/verifie-email') {
-                    navigate('/');
+                    navigate('/login');
                 }
             })
     }, []);
