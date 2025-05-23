@@ -122,7 +122,6 @@ function SecurityPage() {
                     <Spinner animation="border" variant="primary" size="lg" />
                 </div>
                 <br />
-                <br />
             </Container>
         );
     };
