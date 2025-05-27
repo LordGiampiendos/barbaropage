@@ -40,10 +40,7 @@ function Login() {
         }),
         onSubmit: (values) => {
           setIsLoading(true);
-          axios.post('https://serverbarbaropersonal.pagekite.me/users/login', values, {
-             headers: {
-                 Authorization: `Bearer ${token}`
-             }})
+          axios.post('https://serverbarbaropersonal.pagekite.me/users/login', values)
             .then(response => {
               login(response.data);
               navigate('/');
