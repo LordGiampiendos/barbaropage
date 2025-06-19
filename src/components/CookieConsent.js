@@ -22,7 +22,7 @@ const CookieConsent = () => {
         if (!messageReceivedRef.current) {
           setShowCookieConsent(true);
         }
-      }, 500);
+      }, 1200);
     }
 
     return () => window.removeEventListener("message", handleMessage);
