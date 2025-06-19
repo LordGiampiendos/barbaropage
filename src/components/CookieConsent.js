@@ -11,7 +11,6 @@ const CookieConsent = () => {
 
     const handleMessage = (event) => {
       if (event.data?.type === "HIDE_COOKIES_BANNER") {
-        console.log("Ricevuto messaggio per nascondere banner.");
         messageReceivedRef.current = true;
       }
     };
@@ -23,7 +22,7 @@ const CookieConsent = () => {
         if (!messageReceivedRef.current) {
           setShowCookieConsent(true);
         }
-      }, 300);
+      }, 500);
     }
 
     return () => window.removeEventListener("message", handleMessage);
