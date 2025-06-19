@@ -14,7 +14,7 @@ const CookieConsent = () => {
         }
       }
       if (event.data?.type === "HIDE_COOKIES_BANNER") {
-        return;
+        setShowCookieConsent(true);
       }
       else {
         if (!consent) {
