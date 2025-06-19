@@ -8,6 +8,7 @@ const CookieConsent = () => {
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
     window.addEventListener("message", (event) => {
+      console.log("Ricevuto postMessage:", event.data, "da", event.origin);
       if (event.data?.type === "HIDE_COOKIES_BANNER") {
         return;
       }
