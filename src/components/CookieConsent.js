@@ -8,8 +8,11 @@ const CookieConsent = () => {
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
     window.addEventListener("message", (event) => {
-      if (event.origin !== "https://corporationpage.vercel.app") return;
-    
+      if (event.origin !== "https://corporationpage.vercel.app") {
+        if (!consent) {
+          setShowCookieConsent(true);
+        }
+      }
       if (event.data?.type === "HIDE_COOKIES_BANNER") {
         return;
       }
