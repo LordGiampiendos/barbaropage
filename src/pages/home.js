@@ -1,9 +1,34 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Container, Row, Col, Card, ListGroup, Carousel } from 'react-bootstrap';
 import { useAuth } from '../pages/context/AuthContext';
 
 function Home() {
     const { user } = useAuth();
+
+    function CorporationIframe({ demoUrl }) {
+        const iframeRef = useRef(null);
+
+        useEffect(() => {
+            const iframe = iframeRef.current;
+            if (iframe) {
+                const origin = new URL(demoUrl).origin;
+                iframe.onload = () => {
+                    iframe.contentWindow?.postMessage({ type: "HIDE_COOKIES_BANNER" }, origin);
+                };
+            }
+        }, [demoUrl]);
+
+        return (
+            <iframe
+                ref={iframeRef}
+                src={demoUrl}
+                width="100%"
+                height="250px"
+                title="Corporation"
+                style={{ border: '1px solid #ddd', borderRadius: '8px' }}
+            />
+        );
+    }
 
     return (
         <Container className="mt-5">
@@ -233,6 +258,17 @@ function Home() {
                             <Card.Text>
                                 Scansiona il codice QR con il tuo smartphone per scaricare l'App.
                                 (solo Android)
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="mb-4 shadow-lg">
+                        <Card.Body>
+                            <div style={{ marginBottom: "10px" }}>
+                                <CorporationIframe key={0} demoUrl="https://corporationpage.vercel.app" />
+                            </div>
+                            <Card.Title className='fw-semibold' >Corporation</Card.Title>
+                            <Card.Text>
+                                Sito Web Aziendale
                             </Card.Text>
                         </Card.Body>
                     </Card>
