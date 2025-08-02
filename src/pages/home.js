@@ -210,7 +210,6 @@ function Home() {
                             </ListGroup>
                         </Card.Body>
                     </Card>
-
                 </Col>
 
                 <Col md={5} style={{ marginRight: "auto" }}>
@@ -292,5 +291,6 @@ function Home() {
         </Container>
     );
 }
+
 
 export default Home;
