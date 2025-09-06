@@ -246,6 +246,7 @@ function Home() {
                                     <ListGroup.Item>Java / Java Enterprise / Jakarta (Jsp, Servlet, Spring Boot, Spring Security)</ListGroup.Item>
                                     <ListGroup.Item>PHP / Javascript (React, React Native, Bootstrap)</ListGroup.Item>
                                     <ListGroup.Item>Python (IA generativa (LLAMA, PHI, ecc...), Machine Learning, Deep Learning, Transformers, Reti Convoluzionali)</ListGroup.Item>
+                                    <ListGroup.Item>RPA / UiPath (Studio, Orchestrator, Assistant)</ListGroup.Item>
                                     <ListGroup.Item>Microsoft Windows (Terminale, Registro, Gestione Avanzata Della Sicurezza (Liste di controllo degli accessi, Ruoli, ecc...), Backup, Rispristino, ecc...)</ListGroup.Item>
                                     <ListGroup.Item>Linux (Idem Come Windows)</ListGroup.Item>
                                     <ListGroup.Item>Android (Terminale, Modifica e Firma APK, Applicazione Web Mobile, Root, Sviluppo, ecc...)</ListGroup.Item>
@@ -294,3 +295,4 @@ function Home() {
 
 
 export default Home;
+
