@@ -71,7 +71,7 @@ function Home() {
                             <Row className="text-center mb-4">
                                 <Col md={4}>
                                     <i className="bi bi-globe fs-1 text-info" />
-                                    <h4 className="mt-2">4</h4>
+                                    <h4 className="mt-2">5</h4>
                                     <p>Siti Web Creati</p>
                                 </Col>
                                 <Col md={4}>
@@ -295,4 +295,5 @@ function Home() {
 
 
 export default Home;
+
 
