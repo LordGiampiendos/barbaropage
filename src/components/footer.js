@@ -18,11 +18,6 @@ function Footer() {
                                 </a>
                             </ListGroup.Item>
                             <ListGroup.Item style={{ backgroundColor: '#333', border: 'none', color: '#fff' }}>
-                                <a href="skype:giampiero12345678?chat" style={{ color: '#fff', textDecoration: 'none' }}>
-                                    <FaSkype /> <strong>Skype:</strong> giampiero12345678
-                                </a>
-                            </ListGroup.Item>
-                            <ListGroup.Item style={{ backgroundColor: '#333', border: 'none', color: '#fff' }}>
                                 <a href="mailto:giampiero12345678@hotmail.it" style={{ color: '#fff', textDecoration: 'none' }}>
                                     <FaEnvelope /> <strong>Email principale:</strong> giampiero12345678@hotmail.it
                                 </a>
@@ -69,5 +64,6 @@ function Footer() {
         </footer>
     );
 }
+
 
 export default Footer;
