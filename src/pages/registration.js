@@ -420,13 +420,17 @@ function Registration() {
                     <p>Durante il processo di registrazione, l'utente fornirà informazioni accurate, complete e veritiere. Sei responsabile per la protezione della tua password e per tutte le attività che avvengono nel tuo account. Se noti attività sospette, sei tenuto a informare immediatamente il nostro team di supporto.</p>
 
                     <h6>4. <strong>Privacy</strong></h6>
-                    <p>Rispettando la tua privacy, raccogliamo solo le informazioni necessarie per offrirti i nostri servizi. Per dettagli su come raccogliamo, usiamo e proteggiamo i tuoi dati, consulta la nostra <a
-                            href="#"
+                    <p>Rispettando la tua privacy, raccogliamo solo le informazioni necessarie per offrirti i nostri servizi. Per dettagli su come raccogliamo, usiamo e proteggiamo i tuoi dati, consulta la nostra <button
                             onClick={handleShowPrivacy}
-                            style={{ color: "#f1d600" }}
+                            style={{ color: "#f1d600", 
+                                     background: "none",
+                                     border: "none",
+                                     color: "blue",
+                                     textDecoration: "underline" 
+                            }}
                         >
                             Politica sulla Privacy
-                        </a>.
+                        </button>.
                     </p>
 
                     <h6>5. <strong>Proprietà Intellettuale</strong></h6>
@@ -536,4 +540,5 @@ function Registration() {
 }
 
 export default Registration;
+
 
