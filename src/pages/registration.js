@@ -104,7 +104,7 @@ function Registration() {
         } else {
             setFieldValue('addressDomicile', formik.values.addressDomicile);
         }
-    }, [isSameAddress, setFieldValue]);
+    }, [isSameAddress, setFieldValue, formik.values]);
 
 
     const handleCheckboxChange = () => {
@@ -543,6 +543,7 @@ function Registration() {
 }
 
 export default Registration;
+
 
 
 
