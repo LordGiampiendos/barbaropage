@@ -321,7 +321,14 @@ function Registration() {
                                 type="checkbox"
                                 label={
                                     <>
-                                        <a href="#" onClick={handleOpenModal}>Accetto i termini e le condizioni</a>
+                                       <button onClick={handleOpenModal} style={{ 
+                                            background: "none",
+                                            border: "none",
+                                            color: "blue",
+                                            textDecoration: "underline"
+                                        }}>
+                                            Accetto i termini e le condizioni
+                                        </button>
                                     </>
                                 }
                                 required
@@ -529,3 +536,4 @@ function Registration() {
 }
 
 export default Registration;
+
