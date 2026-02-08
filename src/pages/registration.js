@@ -16,6 +16,9 @@ function Registration() {
     const [show, setShow] = useState(true);
     const [showModal, setShowModal] = useState(false);
     const [showModalP, setShowModalP] = useState(false);
+    const {
+        setFieldValue,
+    } = formik;
 
     useEffect(() => {
         const userAgent = navigator.userAgent;
@@ -96,11 +99,11 @@ function Registration() {
 
     useEffect(() => {
         if (isSameAddress) {
-            formik.setFieldValue('addressDomicile', formik.values.addressResidence);
+            setFieldValue('addressDomicile', formik.values.addressResidence);
         } else {
-            formik.setFieldValue('addressDomicile', formik.values.addressDomicile);
+            setFieldValue('addressDomicile', formik.values.addressDomicile);
         }
-    }, [isSameAddress, formik.values]);
+    }, [isSameAddress, setFieldValue]);
 
 
     const handleCheckboxChange = () => {
@@ -539,6 +542,7 @@ function Registration() {
 }
 
 export default Registration;
+
 
 
 
