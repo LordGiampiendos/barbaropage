@@ -69,6 +69,10 @@ function EditProfilePage() {
         },
     });
 
+    const {
+        setFieldValue,
+    } = formik;
+
     const handleImageChange = async (e) => {
         const file = e.target.files[0];
 
@@ -85,13 +89,13 @@ function EditProfilePage() {
         document.getElementById('imageInput').value = ''; 
     };
 
-    useEffect(() => {
+   useEffect(() => {
         if (isSameAddress) {
-            formik.setFieldValue('addressDomicile', formik.values.addressResidence);
+            setFieldValue('addressDomicile', formik.values.addressResidence);
         } else {
-            formik.setFieldValue('addressDomicile', formik.values.addressDomicile);
+            setFieldValue('addressDomicile', formik.values.addressDomicile);
         }
-    }, [isSameAddress, formik.values]);
+    }, [isSameAddress, setFieldValue, formik.values]);
 
     const handleCheckboxChange = () => {
         setIsSameAddress(!isSameAddress);
@@ -310,3 +314,4 @@ function EditProfilePage() {
 }
 
 export default EditProfilePage;
+
