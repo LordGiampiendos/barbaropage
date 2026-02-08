@@ -26,7 +26,7 @@ const VerifieEmailPage = () => {
                 setError(error.response.data);
             });
         }
-    }, [token]);
+    }, [token, navigate]);
 
     return (
         <Container className="mt-5">
@@ -42,5 +42,6 @@ const VerifieEmailPage = () => {
         </Container>
     );
 };
+
 
 export default VerifieEmailPage;
