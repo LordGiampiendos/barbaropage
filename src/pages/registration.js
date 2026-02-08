@@ -425,7 +425,6 @@ function Registration() {
                             style={{ color: "#f1d600", 
                                      background: "none",
                                      border: "none",
-                                     color: "blue",
                                      textDecoration: "underline" 
                             }}
                         >
@@ -540,5 +539,6 @@ function Registration() {
 }
 
 export default Registration;
+
 
 
