@@ -16,9 +16,6 @@ function Registration() {
     const [show, setShow] = useState(true);
     const [showModal, setShowModal] = useState(false);
     const [showModalP, setShowModalP] = useState(false);
-    const {
-        setFieldValue,
-    } = formik;
 
     useEffect(() => {
         const userAgent = navigator.userAgent;
@@ -81,6 +78,10 @@ function Registration() {
                 });
         },
     });
+
+    const {
+        setFieldValue,
+    } = formik;
 
     const handleImageChange = async (event) => {
         const file = event.target.files[0];
@@ -542,6 +543,7 @@ function Registration() {
 }
 
 export default Registration;
+
 
 
 
