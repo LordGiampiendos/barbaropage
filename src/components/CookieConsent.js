@@ -66,13 +66,17 @@ const CookieConsent = () => {
             (ad es. per l'autenticazione e la sessione).
             <br />
             <br />
-            <a
-              href="#"
+            <button
               onClick={handleShowPrivacy}
-              style={{ color: "#f1d600" }}
+              style={{ color: "#f1d600", 
+                       background: "none",
+                       border: "none",
+                       padding: 0 ,
+                       textDecoration: "underline"
+              }}
             >
               Leggi la nostra Informativa sulla Privacy
-            </a>
+            </button>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleEssentialOnly}>
@@ -162,3 +166,4 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
+
