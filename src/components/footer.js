@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaTiktok, FaYoutube, FaLinkedin, FaGithub, FaSkype } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaTiktok, FaYoutube, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './footer.css';
 
 function Footer() {
@@ -67,3 +67,4 @@ function Footer() {
 
 
 export default Footer;
+
