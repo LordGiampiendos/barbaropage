@@ -20,7 +20,7 @@ import Registration from './pages/registration';
 import PageNotFound from './components/error';
 import React from 'react';
 import { useAuth } from './pages/context/AuthContext';
-import { useEffect } from 'react';
+import { useCallback } from 'react';
 import axios from 'axios';
 import CookieConsent from './components/CookieConsent';
 
@@ -29,7 +29,7 @@ function App() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    useEffect(() => {
+    useCallback(() => {
         axios.post('https://serverbarbaropersonal.pagekite.me/session/get-session-data', user, {
             headers: {
                 'WebRequest': true,
@@ -48,7 +48,7 @@ function App() {
                     navigate('/login');
                 }
             })
-    }, []);
+    }, [location.pathname, login, logout, navigate, user]);
 
     return (
         <div className="App">
